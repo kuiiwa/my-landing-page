@@ -3,80 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polyglot Passion - Learn Languages Authentically</title>
+    <title>Polyglot Passion - Your Personalized Language Journey</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
         }
         header {
-            background-color: #f0f8ff;
-            padding: 20px;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            padding: 40px 20px;
             text-align: center;
+            color: white;
         }
         header h1 {
             margin-bottom: 10px;
-            color: #2c3e50;
+            font-size: 2.5em;
         }
         .hero {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?language,learning');
+            background-image: url('https://source.unsplash.com/1600x900/?language,travel');
             background-size: cover;
             background-position: center;
             color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 150px 20px;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero * {
+            position: relative;
+            z-index: 1;
         }
         .hero h2 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             max-width: 800px;
             margin: 0 auto 30px;
         }
         .features {
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .features h2 {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             color: #2c3e50;
+            font-size: 2.2em;
         }
         .feature {
             display: inline-block;
             width: 300px;
-            margin: 20px;
+            margin: 30px;
             vertical-align: top;
         }
         .feature img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-        .feature h3 {
-            margin-bottom: 10px;
-            color: #3498db;
-        }
-        .cta {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .cta h2 {
+            width: 90px;
+            height: 90px;
             margin-bottom: 20px;
         }
-        .cta a {
-            background-color: #fff;
+        .feature h3 {
+            margin-bottom: 15px;
             color: #3498db;
+            font-size: 1.4em;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .testimonials h2 {
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-size: 2.2em;
+        }
+        .testimonial {
+            display: inline-block;
+            width: 350px;
+            margin: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+        .cta {
+            background: linear-gradient(135deg, #ffd89b, #19547b);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .cta h2 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .cta input[type="email"] {
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+            width: 300px;
+        }
+        .cta button {
+            background-color: #fff;
+            color: #19547b;
             padding: 15px 30px;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
             font-weight: bold;
+            cursor: pointer;
         }
         footer {
             background-color: #f4f4f4;
@@ -84,52 +138,72 @@
             padding: 20px;
             font-size: 0.8em;
         }
+        .languages {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .languages h2 {
+            margin-bottom: 30px;
+            color: #2c3e50;
+            font-size: 2em;
+        }
+        .languages p {
+          max-width: 800px;
+          margin: 0 auto 30px;
+        }
+        .language-icons img{
+          width: 50px;
+          height: 50px;
+          margin: 10px;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Polyglot Passion</h1>
-        <p>Learn Languages Authentically with Personalized Content</p>
+        <p>Your Gateway to Fluent Language Learning</p>
     </header>
 
     <section class="hero">
-        <h2>Unlock Your Language Potential</h2>
-        <p>Tired of static lessons? Polyglot Passion delivers real-world content tailored to your interests and skill level. Learn Spanish, French, and more with dynamic, engaging material.</p>
-        <a href="#features" style="background-color:white; color: black; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Discover Features</a>
+        <h2>Unlock Global Conversations</h2>
+        <p>Learn languages through content you love. Personalized, dynamic, and engaging. Start your journey today.</p>
     </section>
 
     <section id="features" class="features">
-        <h2>Features Designed for You </h2>
+        <h2>Key Features</h2>
         <div class="feature">
-            <img src="https://img.icons8.com/color/96/000000/news.png" alt="News Icon">
-            <h3>Real-World Content</h3>
-            <p>Dive into news, podcasts, and articles that matter to you. Technology, politics, culture—learn what you love.</p>
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-personalized-marketing-digital-marketing-flaticons-lineal-color-flat-icons.png" alt="Personalized Icon">
+            <h3>Personalized Content</h3>
+            <p>Tailored news, podcasts, and articles to match your interests and level.</p>
         </div>
         <div class="feature">
-            <img src="https://img.icons8.com/color/96/000000/process.png" alt="Process Icon">
-            <h3>Dynamic Difficulty Adjustment</h3>
-            <p>Our app rephrases content in real-time, ensuring you’re always learning at the right pace.</p>
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-dynamic-seo-and-web-flaticons-lineal-color-flat-icons.png" alt="Dynamic Icon">
+            <h3>Dynamic Difficulty</h3>
+            <p>Real-time content adaptation for optimal learning pace.</p>
         </div>
         <div class="feature">
-            <img src="https://img.icons8.com/color/96/000000/bar-chart.png" alt="Progress Icon">
-            <h3>Structured Progress Tracking</h3>
-            <p>Monitor your progress and stay motivated with detailed analytics and structured learning paths.</p>
+            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-progress-report-digital-marketing-flaticons-lineal-color-flat-icons.png" alt="Progress Icon">
+            <h3>Progress Tracking</h3>
+            <p>Detailed analytics and structured learning paths to monitor your growth.</p>
         </div>
-        <div class="feature">
-            <img src="https://img.icons8.com/color/96/000000/privacy.png" alt="Privacy Icon">
-            <h3>Privacy Focused</h3>
-            <p>Your data is safe with us. We prioritize your privacy and ensure a secure learning environment.</p>
-        </div>
-
     </section>
 
-    <section class="cta">
-        <h2>Ready to Start Your Language Journey?</h2>
-        <a href="#">Sign Up for Early Access</a>
+    <section class="languages">
+        <h2>Available Languages</h2>
+        <p>Dive into some of the most spoken languages around the world. We are always adding more languages to our list. </p>
+        <div class="language-icons">
+          <img src="https://flagcdn.com/24x18/es.png" alt="Spanish Flag">
+          <img src="https://flagcdn.com/24x18/fr.png" alt="French Flag">
+          <img src="https://flagcdn.com/24x18/de.png" alt="German Flag">
+          <img src="https://flagcdn.com/24x18/ja.png" alt="Japanese Flag">
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Polyglot Passion. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial">
+            <p>"Polyglot Passion has transformed my language learning. The real-world content keeps me engaged and motivated."</p>
+            <strong>- Ben, Software Engineer</strong>
+        </div>
+        <div class="testimonial">
+            <p>"I love how the app adjusts the difficulty in real
